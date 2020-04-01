@@ -55,7 +55,8 @@ The project works differently on different browser and screen sizes as follows: 
 
 ### Deployment
 The website was coded in the Webstorm 2019.3.1., a local GIT directory was used for version control and then uploaded to GITHUB. Once it was in GITHUB repositories, it was made live using GITHUB pages. The website can be found at: 
-Git push was used for activating github pages 
+Git push was used for activating github pages. 
+I developed most of my site before realizing that I hadn't set up my Git. I realize this is a mistake that I will try not to repeat again.
 
 There are no differences between the deployed version and the development version are:
 
