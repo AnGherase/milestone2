@@ -1,47 +1,99 @@
 var map;
-function initMap() {
-    var map = new google.maps.Map(document.getElementById('map'), options);
-    center: {
-        lat: -34.397,
-            lng: 150.644
-    }
-    zoom: 8,
-        draggable: false,
-        scaleControl: false,
-        streetViewControl: false
+var info = [];
+var center = {
+    lat: -34.4291969,
+    lng: 150.8907369
 };
 
-// Add marker
-var marker = new google.maps.Marker({
-        position: {lat: 47.3396, lng: 8.5806},
-        map: map
+var marks = [{
+    placeName: "St.Michael's Cathedral",
+    LatLng: [{
+        lat: -34.4236536676,
+        lng: 150.89512236
+    }]
+},
+    {
+        placeName: "Old Post Office",
+        LatLng: [{
+            lat: -34.4245901,
+            lng: 150.8688307
+        }]
+    },
+    {
+        placeName: "Regent Theatre",
+        LatLng: [{
+            lat: -34.4389004,
+            lng: 150.8817069
+        }]
+    },
+    {
+        placeName: "Stuart Park",
+        LatLng: [{
+            lat: -34.4091,
+            lng: 150.8994
+        }]
+    },
+    {
+        placeName: "Breakwater Lighthouse",
+        LatLng: [{
+            lat: -34.4197,
+            lng: 150.9068
+        }]
+    },
+    {
+        placeName: "Art Gallery",
+        LatLng: [{
+            lat: -34.4264,
+            lng: 150.8975
+        }]
     }
-);
-//Listen for click on map
-google.maps.event.addListener(map, 'click');
 
-function add_marker(event) {
-    //Add marker
-    addMarker({coords: event.latLng});
+];
+
+window.onload = function () {
+    initMap();
+};
+
+function addpointers() {
+
+    for (var i = 0; i < marks.length; i++) {
+        var contentString = '<div id="content"><h1>' + marks[i].placeName +
+            '</h1><p>See our <a href="heritage.html">Heritage page </a> for further details</p></div>';
+
+        const marker = new google.maps.Marker({
+            position: marks[i].LatLng[0],
+            map: map
+        });
+
+        const infowindow = new google.maps.InfoWindow({
+            content: contentString,
+            maxWidth: 200
+        });
+
+        marker.addListener('click', function () {
+            closeOtherInfo();
+            infowindow.open(marker.get('map'), marker);
+            info[0] = infowindow;
+        });
+
+    }
 }
 
-let markers = stations.features;
-console.log(markers);
-for (var x = 0; x < markers.length; x++) {
-    let stationName = markers [x].properties.stopname;
-    let latitude = markers[x].geometry.coordinates[1];
-    let longitude = markers[x].geometry.coordinates[0];
-    //console.log(stationName + "+latitude+" "+longitude");
-    dropMarker(latitude, longitude);
-}
-}
-function dropMarker(lat, lng) {
-    var location = {lat: lat, lng: lng}
+function closeOtherInfo() {
+    if (info.length > 0) {
+        info[0].set("marker", null);
+        info[0].close();
+        info.length = 0;
+    }
 }
 
-var contentString = "<h4>" + stationName + < /h4>;
-var infoWindow = new google.maps.InfoWindow({
-    content: contentString
-});
-var marker = new google.maps.Marker({position: location, map, title stationName})
+function initMap() {
+    map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 14,
+        center: center,
+        draggable: true,
+        scaleControl: true,
+        streetViewControl: false
+    });
+    addpointers();
 }

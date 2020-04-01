@@ -1,22 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a8fd2cd7-7e54-4471-9738-ea4314a1e05a" name="Default Changelist" comment="" />
+    <list default="true" id="a8fd2cd7-7e54-4471-9738-ea4314a1e05a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/heritage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stationmap.js" beforeDir="false" afterPath="$PROJECT_DIR$/stationmap.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1ZWqfSBaE8d3MdbvSZrEdfHiEkg" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="jsx.switch.disabled" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -50,7 +69,11 @@
       <workItem from="1585248603017" duration="5569000" />
       <workItem from="1585309664277" duration="9328000" />
       <workItem from="1585422234388" duration="1823000" />
-      <workItem from="1585471253024" duration="9261000" />
+      <workItem from="1585471253024" duration="9532000" />
+      <workItem from="1585510081867" duration="2651000" />
+      <workItem from="1585565982734" duration="8599000" />
+      <workItem from="1585646879244" duration="9385000" />
+      <workItem from="1585756343792" duration="3682000" />
     </task>
     <servers />
   </component>
@@ -66,6 +89,14 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="421" y="97" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1585221815176" />
+    <state x="523" y="235" width="258" height="210" key="Github.ShareDialog" timestamp="1585507430060">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="523" y="235" width="258" height="210" key="Github.ShareDialog/0.0.1280.680@0.0.1280.680" timestamp="1585507430060" />
+    <state x="142" y="0" key="SettingsEditor" timestamp="1585681421811">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1585681421811" />
     <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1585221826409">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
